@@ -1,0 +1,20 @@
+<p>Your pizzas</p>
+<p>First name: <%= @pizza.first_name %></p>
+<p>Last name: <%= @pizza.last_name %></p>
+<p>Toppings: <%= @pizza.topping %></p>
+<p>Quantity: <%= @pizza.quantity %></p>
+
+
+<a href="/pizzas/<%= @pizza.id %>/edit"></a>
+
+<form class="" action="/pizzas/<%= @pizza.id %>/edit" method="get">
+    <input type="submit" value="Edit">
+</form>
+
+<hr>
+
+<a href="/pizzas/<%= @pizza.id %>/delete"></a>
+
+<form class="" action="/pizzas/<%= @pizza.id %>/delete" method="post">
+    <input type="submit" value="Delete">
+</form>

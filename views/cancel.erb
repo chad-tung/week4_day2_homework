@@ -1,0 +1,7 @@
+<form action="/pizzas/<%= @pizza.id%>/cancel" method="get">
+    <label for="cancelPizza">Cancel pizza?:</label>
+    <select name="topping" id="cancelPizza">
+        <option value="Yes">Yes</option>
+    </select>
+    <input type="submit" value="Submit" />
+</form>
