@@ -2,14 +2,18 @@
 <html>
 <head>
     <title>Pizza Shop</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="/pizzas">Home</a></li>
-            <li><a href="/pizzas/new">Order a pizza</a></li>
+            <li class="links"><a href="/pizzas">Home</a></li>
+            <li class="links"><a href="/pizzas/new">Order a pizza</a></li>
         </ul>
     </nav>
-  <%= yield %>
+    <div class="wrap">
+        <%= yield %>
+    </div>
+
 </body>
 </html>

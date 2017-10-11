@@ -19,12 +19,6 @@ post '/pizzas/:id/delete' do
     erb( :cancelled )
 end
 
-# get '/pizzas/:id/cancel' do
-#     @pizza = Pizza.find(params['id'])
-#     @pizza.delete()
-#     erb( :cancelled )
-# end
-
 get '/pizzas/:id/edit' do
     @pizza = Pizza.find(params['id'])
     erb( :edit )
