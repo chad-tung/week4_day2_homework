@@ -1,7 +1,9 @@
 <p>All the pizzas!</p>
 <% @pizzas.each do |pizza| %>
-    <p class="customer_details">Name: <%= pizza.pretty_name %></p>
-    <p class="customer_details">Order: <%= pizza.quantity() %> X <%= pizza.topping() %></p>
-    <p><a href="/pizzas/<%= pizza.id %>">Check your order</a></p>
+    <div class="customer_details">
+        <p>Name: <%= pizza.pretty_name %></p>
+        <p>Order: <%= pizza.quantity() %> X <%= pizza.topping() %></p>
+    </div>
+    <p class="check"><a href="/pizzas/<%= pizza.id %>">Check your order</a></p>
     <hr />
 <% end %>

@@ -1,29 +1,38 @@
 body {
-    color: pink;
+    color: saddlebrown;
     background-image: -webkit-linear-gradient(#14f472, red);;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center, justify;
 }
 
-.links {
-    color: yellow;
+.customer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
-.choices {
-    flex-wrap: wrap;
-    color: red;
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .check {
+    display: flex;
     justify-content: center;
 }
 
-.customer_details {
-    justify-content: center;
-
-}
-
-.wrap {
+.choices {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

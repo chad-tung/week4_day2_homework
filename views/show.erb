@@ -1,18 +1,27 @@
-<p>Your pizzas</p>
-<p>First name: <%= @pizza.first_name %></p>
-<p>Last name: <%= @pizza.last_name %></p>
-<p>Toppings: <%= @pizza.topping %></p>
-<p>Quantity: <%= @pizza.quantity %></p>
 
 
-<a href="/pizzas/<%= @pizza.id %>/edit"></a>
+    <p>Your pizzas</p>
+<div class="show">
+    <p>First name: <%= @pizza.first_name %></p>
+    <p>Last name: <%= @pizza.last_name %></p>
+    <p>Toppings: <%= @pizza.topping %></p>
+    <p>Quantity: <%= @pizza.quantity %></p>
 
-<form class="choices" action="/pizzas/<%= @pizza.id %>/edit" method="get">
-    <input type="submit" value="Edit">
-</form>
+</div>
 
-<a href="/pizzas/<%= @pizza.id %>/delete"></a>
+<div class="choices">
 
-<form class="choices" action="/pizzas/<%= @pizza.id %>/delete" method="post">
-    <input type="submit" value="Delete">
-</form>
+
+    <a href="/pizzas/<%= @pizza.id %>/edit"></a>
+
+    <form action="/pizzas/<%= @pizza.id %>/edit" method="get">
+        <input type="submit" value="Edit">
+    </form>
+
+    <a href="/pizzas/<%= @pizza.id %>/delete"></a>
+
+    <form action="/pizzas/<%= @pizza.id %>/delete" method="post">
+        <input type="submit" value="Delete">
+    </form>
+
+</div>
